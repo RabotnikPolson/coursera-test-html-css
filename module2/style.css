@@ -1,4 +1,4 @@
-/* General styles */
+/* Общие стили */
 * {
     box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-/* Style for sections */
+/* Стиль для секций */
 section {
     border: 1px solid black;
     margin: 10px;
@@ -24,7 +24,7 @@ section h2 {
     margin-top: 0;
 }
 
-/* Layout for Desktop */
+/* Макет для настольного компьютера */
 @media (min-width: 992px) {
     .container {
         display: flex;
@@ -36,7 +36,7 @@ section h2 {
     }
 }
 
-/* Layout for Tablet */
+/* Макет для планшета */
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         display: flex;
@@ -48,13 +48,13 @@ section h2 {
         margin: 1%;
     }
 
-    /* 3rd section takes full width */
+    /* 3-я секция занимает всю ширину */
     section:nth-child(3) {
         width: 100%;
     }
 }
 
-/* Layout for Mobile */
+/* Макет для мобильных устройств */
 @media (max-width: 767px) {
     .container {
         display: block;
