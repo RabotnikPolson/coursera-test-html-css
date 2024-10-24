@@ -1,0 +1,67 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for sections */
+section {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+section h2 {
+    background-color: darkgray;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+}
+
+/* Layout for Desktop */
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section {
+        width: 30%;
+    }
+}
+
+/* Layout for Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section {
+        width: 48%;
+        margin: 1%;
+    }
+
+    /* 3rd section takes full width */
+    section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Layout for Mobile */
+@media (max-width: 767px) {
+    .container {
+        display: block;
+    }
+
+    section {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
